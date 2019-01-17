@@ -1,0 +1,211 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+\usepackage{enumitem}
+\usepackage{tabto}
+\usepackage{fontspec}
+\usepackage[Symbols]{ucharclasses}
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10.7in} % increase text height to fit resume on 1 page
+\setlist[itemize,1]{leftmargin=\dimexpr 26pt-.7in} % to change the tab size globally
+\addtolength{\textwidth}{0.8in}
+\addtolength{\hoffset}{-0.5in}
+
+\usepackage{fontawesome}
+\newfontfamily{\mysymbolfont}{Symbola}
+\newfontfamily{\mymainfont}{DejaVu Sans}
+\setTransitionsForSymbols{\mysymbolfont}{}
+
+\begin{document}  
+\ifisanon
+        \name{ANONYMOUS CV}
+        \address{Some parts were removed. These are highlighted by \textit{(Anonymous)}}
+\else
+        \name{SAMUEL GIFFARD}
+
+        \address{ \faMapMarker~Kempische Steenweg 396/4.1, 3500 Hasselt, Belgium \\ 📧 samuel@giffard.co ~~ \faMobile~+32 (0) 4-84-14-10-33 \\ \\ \textbf{Python Trainer, Engineer \& Evangelist} }
+\fi
+
+\begin{resume}
+ 
+\section{EDUCATION}       
+\begin{itemize} 
+\item[] 2011 - 2012 \tabto{2cm} MSc Computer Science \hfill University of Edinburgh -- Scotland 
+        \begin{itemize}
+                \item[+] \textbf{MSc Computer Science with Distinction} in Computer Systems, Software Engr. and High Perf. Computing
+        \end{itemize}
+        
+\item[] 2009 - 2011 \tabto{2cm} BSc (Hons) Computer Science \hfill Robert Gordon University -- Scotland 
+        \begin{itemize}
+                \item[+] \textbf{First-class Bachelor with Honours} in Computing for Internet and Multimedia
+        \end{itemize}
+        
+\item[] 2008 - 2009 \tabto{2cm} Licence 3 Informatique Fondamentale \hfill Toulouse III (Universit\'e Paul Sabatier) -- France
+        \begin{itemize}
+                \item[+] Equivalent: third year of BSc, Fundamentals in Computer Science
+        \end{itemize}
+
+\item[] 2007 - 2008 \tabto{2cm} \textbf{DUT Informatique} \hfill IUT ``A'' -- Toulouse III -- France
+        \begin{itemize}
+                \item[+] Equivalent: HND Computing
+                \item[+] Two-year University degree in Computer Science, in one intensive year (called ``Ann\'ee Sp\'eciale'')
+        \end{itemize}
+
+\item[] 2006 - 2007 \tabto{2cm} CPGE TSI \hfill Lyc\'ee Jean-Baptiste Dumas -- Al\`es -- France
+        \begin{itemize}
+                \item[+] Preparation for national competitive entrance exams to leading French ``Grandes \'Ecoles'', specializing in Mathematics and Physics
+        \end{itemize}
+        
+\item[] 2006 \tabto{2cm} Baccalaur\'eat, in Electronics \hfill Lyc\'ee Antoine Bourdelle -- Montauban -- France
+        \begin{itemize}
+                \item[+] Equivalent: A-Levels
+                \item[+] \textbf{Bac STI G\'enie \'Electronique mention Bien} (top 10\%, $\sim$ with Honours)
+        \end{itemize}
+\end{itemize}
+
+\section{ACHIEVEMENTS}
+\begin{itemize}
+        \item[] July 15, 2011 \tabto{4cm} Graduated as \textbf{Valedictorian} 2010-2011
+        \item[] July 1, 2011 \tabto{4cm} Awarded the \textbf{Nexen Prize} for the highest academic achievement
+\end{itemize}
+
+
+\section{SKILLS} 
+        \begin{itemize}
+                \item[] \textbf{Languages}
+                \begin{itemize}
+                 \item[+]  \textbf{French}: native language, \textbf{English}: fluent, \textbf{Spanish}: elementary, \textbf{Dutch}: learning
+                \end{itemize}   
+        \end{itemize}
+        
+        \begin{itemize}
+        \item[] \textbf{Computer}
+                \begin{itemize}
+                  \item[+] \textbf{Concepts}: Architecture, Multimedia, Security, Relational Databases, Distributed \& Advanced Databases, High-Performance Computing, Object-Oriented, Complexity, Hadoop
+                  \item[+] \textbf{Software}: Oracle, PyCharm, Eclipse, NetBeans, X-Code, PDB, GDB, Valgrind, Adobe (Dw, Ps, Sb, Fl)
+                  \item[+] \textbf{Languages}: \textbf{Python}, Django, \textbf{C/C++}, Linux BASH, MySQL, SQLite, \textbf{Oracle PL/SQL}, Objective-C (iOS), JAVA, ARM, OpenGL (Glut), \LaTeX{}, JS, jQuery, PHP, HTML5/CSS3, XML (XPath, XQuery, DTD, XSD, XSLT), AJAX
+                \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+        \item[] \textbf{Leadership}
+                \begin{itemize}
+                   \item[+] Elected twice as President of ASSERP, the Student Association in Ponsan-Bellevue (Toulouse -- France). I~coordinated the management of over ten societies, each with their own president
+                  \item[+] Head Judge for the international game \textit{Magic: The Gathering} in Nice -- France
+                  \item[+] Lead several group projects to their completion and success
+                \end{itemize}   
+        \end{itemize}
+        
+        \begin{itemize}
+        \item[] \textbf{Communication}
+            \begin{itemize}
+							\item[+] In Amadeus, supervised interns for three months on Django and for six months on Node.js / Aria Template.
+%                \item[+] When working for Amadeus, supervised interns
+%                    \begin{itemize}
+%                        \item[+] one for three months on his Django project, which had to deal with monitoring and comparing versions in our replicated data.
+%                        \item[+] one for six months in his Node.js / Aria Template project. We worked as a mini scrum team, where I worked on infrastructure-related tasks.
+%                    \end{itemize} 
+                \item[+] Judge for \textit{MTG}, communication within a team and communication with players. Most of the tournaments had over 120 players and last for over 14 hours
+                \item[+] Worked as part of customer facing teams in Pizzerias, Restaurants, Tea house
+                \item[+] Led training courses for students in school: Technology in Middle School, Montauban -- France
+                \item[+]  Led campus tours at RGU, Aberdeen -- Scotland
+            \end{itemize} 
+        \end{itemize}
+        
+\section{WORK EXPERIENCES}
+        \begin{itemize}
+					\item[] April 2017 - Jan. 2018 \tabto{5cm} Software Engineer (Python, Django, MariaDB, Postgres, Docker) \hfill Hasselt -- Belgium
+					\begin{itemize}
+						\item[] MVP Developer for  \textbf{Unleashed} (mobile telco) in a Kanban + Squad environment.
+						\begin{itemize}
+							\item[+] Studies, performance tuning, implementation of new features, bugfix and code reviews.
+						\end{itemize}
+					\end{itemize}
+					\item[] Since July 2016 \tabto{5cm} Independant Python Contractor \hfill Nice Area -- France
+					\begin{itemize}
+						\item[+] Private financial market project. Various Python \& Django missions.
+						\item[+] Python trainer for \textbf{AlterWay}, St Cloud, France.
+					\end{itemize}
+					\item[] Feb. 2016 - June 2016 \tabto{5cm} IT Executive (Java, Python, R-Pi, Linux) \hfill Nice Area -- France
+					\begin{itemize}
+						\item[] Lightning Project for \textbf{PwC} (IoT \& B2B, Raspberry Pi), through SII. Creation of :
+						\begin{itemize}
+							\item[+] Generic persistence layer, called in REST and its Json implementation. Java / ServiceMix / Karaf.
+							\item[+] System Watchdog taking XMPP commands with a module-defined grammar. Python / Shell/ smx / init.d.
+							\item[+] Several Python scripts (eg. DTMF \& Morse Code wrapping SoX). 
+							\item[+] Front-End : HTML, Bootstrap \& uikit, Angular 1.5.
+						\end{itemize}
+					\end{itemize}
+								\item[] Nov. 2015 - Feb. 2016 \tabto{5cm} IT Engineer (PHP, Java, C++, Linux) \hfill Nice Area -- France
+												\begin{itemize}
+																\item[] Classified project for \textbf{Airbus D\&S}, through Antyas. It involved, among others, SPOT satellites' image processing.
+												\end{itemize}
+                \item[] Oct. 2012 - July 2015 \tabto{5cm} IT Engineer (C++, Python, Sqlite, Oracle) \hfill Nice Area -- France
+                \begin{itemize}
+                        \item[] Member of the Data Replication team within \textbf{Amadeus}' Middleware department. Mainly focused on R\&D tasks, I worked on:
+                        \begin{itemize}
+                                \item[+] designing new solutions to improve overall performance (reduce network overload, normalized and denormalized database designs, atomicity on fallbacks).
+                                \item[+] data replication over thousands of nodes. The type of data is static (countries, time zones, holidays from IATA) and extremely dynamic (any application within Amadeus can use our Framework).
+                                \item[+] designing and implementing abstract types across several containers (Oracle/Sqlite/C++) to erase our legacy data type discrepancies over the different parts of the data flow.
+                                \item[+] various scripts to prototype or automatize tasks: storage / retrieval / backup / cleanup after each build...
+                                \item[+] exporting data from our caches into two iterations of XMLs, generating XSLTs and XSDs from meta-XSLTs. This design allowed us to publish XML data into past and present schema versions.
+																\item[+] designed and implemented modified Hepburn algorithm for Japanese transliteration.
+																\item[+] decommissioned legacy terminal entries from IBM TPF system into Amadeus' new C++ architecture: OBE.
+                                \item[+] maintenance, support and point of contact for our applications.
+                        \end{itemize}
+                \end{itemize}
+                \item[] May 2012 - Aug. 2012 \tabto{5cm} MSc Dissertation (Python/Django, JS, HTML5/CSS3, \LaTeX{}) \hfill Edinburgh -- Scotland
+                \begin{itemize}
+                        \item[] Design and implementation of an online concurrent Open Source Framework for multiplayer board games. It had to be a real-time asynchronous server-side event-driven solution. 
+                \end{itemize}
+                \item[] Summer 2011 \tabto{5cm} Freelance (PHP, JS, HTML5/CSS3) \hfill Montauban -- France
+                \begin{itemize}
+                        \item[] Creation of the website \ifisanon www....com \textit{(Anonymous)}, \else www.qualigraphe.com, \fi and of its custom modular CMS. Visuals provided by the client. 
+                        %: a news engine, email engine, and some customized modules required by the client (website can be populated through MS Excel). The client provided the visual design of the website.
+                \end{itemize}
+                \item[] Oct. 2010 - May 2011 \tabto{5cm} Honours Project (PHP, JS, HTML/CSS) \hfill Aberdeen -- Scotland
+                \begin{itemize}
+                        \item[] Created a piece of software that provides protection and license management to web developers.
+                        % The original idea, its challenges and the proof that it would not be viable in a cheap environment earnt me a double-A.
+                \end{itemize}
+                \item[] Feb. - May 2009 \tabto{5cm} Observation placement in Middle School (Technology) \hfill Montauban -- France
+%                \begin{itemize}
+%                        \item[] Helping students, assisting the teacher and lecturing on my own for the last session.
+%                        \ifisanon \else School name: \textit{Coll\`ege Ingres}.\fi
+%                \end{itemize}
+                \item[] June - Aug. 2008 \tabto{5cm} Internship (PHP, JS, HTML/CSS) \hfill Toulouse -- France
+%                \begin{itemize}
+%                        \item[] Creation of \ifisanon www....fr \textit{(Anonymous)} \else www.amar-abraham.fr , \fi a fashion designer website.
+%                \end{itemize}
+                \item[] Oct. - Nov. 2007 \tabto{5cm} IT Maintenance for \textbf{CROUS de Toulouse} (public establishment) \hfill Toulouse -- France
+%                \begin{itemize}
+%                        \item[] CROUS deals with things related to studies and students in one academy. My job there was to set up WIFI installations on two student campuses. I was recommended for the job by one of the campus directors.
+%                \end{itemize}
+        \end{itemize}
+        
+\section{MISCELLANEOUS}  
+        \begin{itemize}
+                \item[] French driving license
+                \item[] \textbf{TOEFL} iBT (June 25, 2011): \textbf{107/120} (Reading 23/30, Listening 27/30, Speaking 29/30, Writing 28/30)
+                    \end{itemize} 
+ 
+\section{HOBBIES}         
+        \begin{itemize}
+                \item[] Software development, Web development, weightlifting (5 years), climbing, Go (also named Baduk, Weiqi, Weichi), MahJong MCR, boardgames, travelling, baking
+        \end{itemize}
+
+\section{REFEREES}
+\ifisanon 
+     \begin{itemize}
+         \item[] Referees are available upon request. When the anonymity is removed, do not forget to ask for them. \textit{(Anonymous)}
+     \end{itemize}
+\else
+                \begin{itemize}
+                        \item[] Professor Fan Wenfei \tabto{5cm} \texttt{wenfei -at- inf.ed.ac.uk} \hfill \texttt{http://homepages.inf.ed.ac.uk/wenfei}
+                        \item[] Dr. Niccolo Capanni \tabto{5cm} \texttt{niccolo -at- capanni.co.uk} \hfill \texttt{http://www.linkedin.com/in/capanni}
+                \end{itemize}
+\fi
+\end{resume} 
+
+\end{document}
