@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{tabto}
 \usepackage{fontspec}
+\usepackage{eurosym}
 \usepackage[Symbols]{ucharclasses}
 \topmargin=-0.5in  % start text higher on the page
 \setlength{\textheight}{10.7in} % increase text height to fit resume on 1 page
@@ -24,7 +25,7 @@
 \else
 	\name{SAMUEL GIFFARD}
 
-	\address{ \faMapMarker~Kempische Steenweg 396/4.1, 3500 Hasselt, Belgium \\ 📧 samuel@giffard.co ~~ \faMobile~+32 (0) 4-84-14-10-33 \\ \\ \textbf{Formateur, Ing\'enieur \& \'Evang\'eliste Python}  }
+	\address{ \faMapMarker~Brandstraat 24/101, 9000 Gent, Belgium \\ 📧 samuel@giffard.co ~~ \faMobile~+32 (0) 4-84-14-10-33 \\ \\ \textbf{Formateur, Ing\'enieur \& \'Evang\'eliste Python}  }
 \fi
 
 \begin{resume}
@@ -34,7 +35,7 @@
 \item[] 2011-2012 \tabto{2cm} MSc Computer Science \hfill University of Edinburgh\footnote{~UoE est 17$^{\grave{e}me}$ au classement mondial 2013. \`A titre de comparaison, University of California, Berkeley (UCB) est 25$^{\grave{e}me}$, tandis que les deux meilleures \'ecoles fran\c{c}aises, ENS Paris et Polytechnique sont respectivement 28$^{\grave{e}me}$ et 41$^{\grave{e}me}$. Source : \texttt{http://goo.gl/t78Vdc}} -- \'Ecosse 
 	\begin{itemize}
 		\item[+] \textbf{MSc Computer Science with Distinction} in Computer Systems, Software Engineering and High Performance Computing
-		\item[+] \textit{trad.} \textbf{Master Informatique} \`es Syst\`emes Informatiques, Ing\'enierie du Logiciel et Informatique de Haute Performance, \textbf{obtenu avec la Mention}\footnote{~La Mention est unique, il n'existe pas de palliers. \'Equivaut \`a un ``first-class''.}
+		\item[+] \textit{trad.} \textbf{Master Informatique} \`es Syst\`emes Informatiques, Ing\'enierie du Logiciel et Informatique de Haute Performance, \textbf{obtenu avec la Mention}\footnote{~La Mention est unique, il n'existe pas de paliers. \'Equivaut \`a un ``first-class''.}
 	\end{itemize}
 	
 \item[] 2009-2011 \tabto{2cm} BSc (Hons) Computer Science \hfill Robert Gordon University -- \'Ecosse  
@@ -72,7 +73,7 @@
 	\begin{itemize}
 		\item[] \textbf{Langues}
 		\begin{itemize}
-                 \item[+]  \textbf{Fran\c{c}ais}: langue maternelle, \textbf{Anglais}: bilingue, \textbf{Espagnol}: notions \'el\'ementaires
+                 \item[+]  \textbf{Fran\c{c}ais}: langue maternelle, \textbf{Anglais}: bilingue, \textbf{Flamand}: bases, \textbf{Espagnol}: notions \'el\'ementaires
 		\end{itemize}	
 	\end{itemize}
 	
@@ -109,6 +110,14 @@
 \section{EXP\'ERIENCES PROFESSIONNELLES}
 
 	\begin{itemize}
+		\item[] Depuis F\'evrier  2018 \tabto{5cm} DevOps (Python, Jenkins, Groovy, GCP, PowerShell, Docker) \hfill Gand -- Belgique
+		\begin{itemize}
+			\item[] Promotion de l'am\'elioration de la qualit\'e logicielle au sein d'\textbf{Around Media}.
+			\begin{itemize}
+				\item[+] Pipelines avec Jenkins \& GCE : 1200+ UE4 builds, releases, migration d'assets, clonage \& backups de VM.
+				\item[+] Cr\'eation de \ifisanon \texttt{github.com/...} \textit{(Anonyme)}, \else \texttt{github.com/Mulugruntz/jam} \fi pour \'economiser mensuellement 500\euro+ / instance GCE.
+			\end{itemize}
+		\end{itemize}
 		\item[] Avril 2017 - Jan. 2018 \tabto{5cm} Ing\'enieur Informaticien (Python, Django, MariaDB, Docker) \hfill Hasselt -- Belgique
 		\begin{itemize}
 			\item[] D\'evelopeur MVP pour \textbf{Unleashed} (t\'el\'ecoms mobile) dans un environement Kanban + Squad.
@@ -137,12 +146,12 @@
 		\end{itemize}
 		\item[] Octobre 2012 - Juillet 2015 \tabto{5cm} Ing\'enieur Informaticien (C++, Python, Sqlite, Oracle)  \hfill Sophia Antipolis -- France
 		\begin{itemize}
-			\item[] Membre de l'\'equipe de R\'eplication des Donn\'ees au sein du d\'epartement Middleware d'\textbf{Amadeus}. Majoritairement concentr\'e sur de la R\&D, j'ai notamment travaill\'e sur :
+			\item[] \'Equipe de R\'eplication des Donn\'ees, d\'epartement Middleware d'\textbf{Amadeus}. Ax\'e R\&D, j'ai travaill\'e sur :
 			\begin{itemize}
-				\item[+] la conception de nouvelles solutions pour am\'eliorer les performances g\'en\'erales (r\'eduction de la charge r\'eseau, normalisation et d\'enormalisation de bases de donn\'ees, atomicit\'e de fallbacks).
-				\item[+] r\'eplication de donn\'ees \`a travers des milliers de n\oe{}uds. Les donn\'ees sont soit statiques (\textit{ex:} pays, fuseaux horaires ...) soit extr\^emement dynamiques (toute application d'Amadeus peut utiliser notre Framework).
+				\item[+] l'am\'elioration de performances g\'en\'erales (r\'eseau, bases de donn\'ees, algorithmie).
+				\item[+] la r\'eplication de donn\'ees \`a travers des milliers de n\oe{}uds. Donn\'ees statiques, ou extr\^emement dynamiques.
 				\item[+] la conception et l'impl\'ementation de types abstraits unifiant plusieurs conteneurs (Oracle~/ Sqlite~/ C++) pour gommer les diff\'erences historiques de nos types de donn\'ee.
-				\item[+] divers scripts pour prototyper, acc\'el\'erer ou automatiser des t\^aches : stockage~/ r\'ecup\'eration~/ backup...
+				\item[+] divers scripts pour prototyper, acc\'el\'erer ou automatiser des t\^aches : stockage~/ r\'ecup\'eration~/ backup\textellipsis
 				\item[+] l'export de donn\'ees depuis nos caches vers deux it\'erations successives de XMLs, en g\'en\'erant des XSLTs et des XSDs \`a partir de meta-XSLTs. Cela nous a permis de publier du XML avec diff\'erentes versions de schemas.
 				\item[+] la conception et l'impl\'ementation d'un algorithme de Hepburn modifi\'e pour la translitt\'eration du japonais.
 				\item[+] la d\'ecommission de commandes de terminaux depuis TPF (IBM) vers une nouvelle architecture en C++.
@@ -151,11 +160,11 @@
 		\end{itemize}
 		\item[] Mai 2012 - ao\^ut 2012 \tabto{5cm} Projet de MSc (Python/Django, JS, HTML5/CSS3, \LaTeX{}) \hfill Edinburgh -- \'Ecosse
 		\begin{itemize}
-			\item[] Conception et impl\'ementation d'un Framework Open Source pour les jeux de plateau multijoueur en ligne et simultan\'es. La solution temps r\'eel \'etait dirig\'ee selon des \'ev\`enements re\c{c}us par un serveur asynchrone.
+			\item[] Cr\'eation d'un Framework pour jeux de plateau (multijoueur, simultan\'e, temps r\'eel, async, \'ev\`enementiel serveur).
 		\end{itemize}
 		\item[] \'Et\'e 2011 \tabto{5cm} Freelance (ind\'ependant) (PHP, JS, HTML5/CSS3) \hfill Montauban -- France
 		\begin{itemize}
-			\item[] Cr\'eation de \ifisanon www....com \textit{(Anonyme)} \else www.qualigraphe.com \fi et de son CMS modulaire sur mesure. Visuels pourvus par le client.
+			\item[] Cr\'eation de \ifisanon \texttt{www....com} \textit{(Anonyme)} \else \texttt{www.qualigraphe.com} \fi et de son CMS modulaire sur mesure. Visuels pourvus par le client.
 		\end{itemize}
 		\item[] Octobre 2010 - mai 2011 \tabto{5cm} Projet d'Honours (PHP, JS, HTML/CSS) \hfill Aberdeen -- \'Ecosse
 		\begin{itemize}
