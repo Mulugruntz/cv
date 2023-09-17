@@ -12,14 +12,42 @@ However, please do not use my personal information.
 Scripts are provided as-is. If you want to install on a different system, you're on your own. However, 
 if you do, feel free to submit a pull request with your extra documentation and/or scripts.
 
-### Install (Fedora 36)
+### Install (Fedora)
 
 ```shell
 sudo dnf install tex
-sudo dnf install texlive-tabto-ltx-svn54080-55.fc36 \
-    texlive-eurosym-svn17265.1.4_subrfix-55.fc36 \
-    texlive-ucharclasses-svn58029-55.fc36 \
-    texlive-fontawesome5-svn54517-55.fc36 -y
+sudo dnf install texlive-tabto-ltx \
+    texlive-eurosym \
+    texlive-ucharclasses \
+    texlive-fontawesome5 -y
+sudo dnf install gdouros-symbola-fonts
+```
+
+### Install (macOS)
+
+```shell
+brew install --cask mactex
+echo 'export PATH="/Library/TeX/texbin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+sudo tlmgr update --self
+sudo tlmgr install tabto-ltx eurosym ucharclasses fontawesome5
+```
+
+Might need to install the fonts `Symbola` and `DejaVu Sans`:
+```shell
+curl -LO https://dn-works.com/wp-content/uploads/2020/UFAS-Fonts/Symbola.zip && \
+mkdir symbola_tmp && \
+unzip Symbola.zip -d symbola_tmp && \
+cp symbola_tmp/Symbola.otf ~/Library/Fonts/ && \
+rm -rf symbola_tmp Symbola.zip
+echo "Symbola font has been successfully installed."
+curl -LO "https://downloads.sourceforge.net/project/dejavu/dejavu/2.37/dejavu-fonts-ttf-2.37.zip" && \
+mkdir dejavu_tmp && \
+unzip dejavu-fonts-ttf-2.37.zip -d dejavu_tmp && \
+cp dejavu_tmp/dejavu-fonts-ttf-2.37/ttf/DejaVuSans*.ttf ~/Library/Fonts/ && \
+rm -rf dejavu_tmp dejavu-fonts-ttf-2.37.zip
+echo "DejaVu Sans font has been successfully installed."
+fc-cache -fv
 ```
 
 ### Run
